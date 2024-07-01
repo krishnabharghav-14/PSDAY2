@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //even numbers in range 
+        // // var num =+prompt("Enter a number");
+        // var a=1;
+        // var n="";
+        // for(i=a;i<=num;i++)
+        // {
+        //     if(i%2<1)
+        //     {
+        //         n=n+i+" ";
+               
+        //     }
+        // }
+        // console.log("even numbers in given range is:"+n);
+
+
+        //method-2 to print fibonacci
+        //     var a=0;
+        //     var b=1;
+        //    var res=a+" "+b;
+        //    var d="";
+        //     for(i=2;i<=5;i++)
+        //     {
+        //         var c=a+b;
+        //         d=d+c+" ";
+        //         a=b;
+        //         b=c;
+        //     }
+        //     console.log(res+" "+d);
+
+        //print even number without using % operator
+        //   var a=8;
+        //   if((Math.ceil(a/2)*2==a))
+        //   {
+        //     console.log("even");
+        //   }
+        //   else
+        //   {
+        //     console.log("odd");
+        //   }
+
+        //Write a program to add sum of odd num in fibnocis only once.
+        var num =+prompt("Enter a number");
+        var a=0;
+        var b=1;
+        var s=[];
+        var sum=0;
+        if(num==0)
+        {
+            console.log("invalid");
+        }
+        else
+        {
+            var i=1;
+            while(num>=i)
+            {
+                if(a%2==1)
+                {
+                    if(!s.includes(a))
+                    {
+                        s.push(a)
+        
+                    } 
+                }
+                c=a+b;
+                a=b;
+                b=c;
+                i++;
+            }
+        }
+        console.log(s);
+        for(i=0;i<s.length;i++)
+        {
+            sum=sum+s[i];
+        }
+        console.log(sum);
+
+        // var num=+prompt("Enter the range(negative):");
+        // var temp="";
+        // for(i=num;!(i>=0);i++)
+        // {
+        //     temp=temp+i;
+        // }
+        // console.log("The series of numbers based on user input is :"+temp);
+
+        // var temp1="";
+        // for(i=-1;!(i<=num-1);i--)
+        // {
+        //     temp1=temp1+i;
+        // }
+        // console.log("The series of numbers based on user input is :"+temp1);
+
+    </script>
+</body>
+</html>
